@@ -1,11 +1,12 @@
 # Working with Numbers
-Using object oriented programming in order to learn about numbers in computer science. This includes Hex, Octa, Binary, and decimal. We learned how to convert to each one of these manually without the use of a built in function and built a Number class to do so. 
+Using object oriented programming in order to learn about numbers in computer science. This includes Hex, Octal, Binary, and decimal. We learned how to convert to each one of these manually without the use of a built in function and built a Number class to do so. 
 ## Requirements
 [Java](https://www.oracle.com/java/technologies/downloads/) and a compatible [IDE](https://www.jetbrains.com/idea/) is required to run the files
 ## Installation
 ```
 git clone git@github.com:yoavami/unit-8.git
-
+```
+```
 cd unit-8
 ```
 ## Usage
