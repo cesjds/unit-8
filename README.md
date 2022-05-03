@@ -9,9 +9,9 @@ git clone git@github.com:yoavami/unit-8.git
 cd unit-8
 ```
 ## Usage
-you can mess around with the functions and files in order to understand how to Number class works. 
+you can mess around with the functions and files in order to understand how the Number class works. 
 ## Plagarism
-This repository is not meant for you to directly or partly copy my work. It is meant to help you undertand any part which you do not and for me to help you with your own program. 
+This repository is not meant for you to directly or partly copy my work. It is meant to help you understand any part which you do not understand and for me to help you with your own program. 
 
 
 
