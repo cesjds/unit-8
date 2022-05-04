@@ -14,15 +14,15 @@ public class Number {
     }
 
     // getter
-    public int getNum() {
+    public int getDecimal() {
         return num;
     }
     // setter
-    public void setNum(int num) {
+    public void setDecimal(int num) {
         this.num = num;
     }
 
-    public String getHexadecimal(int num) {
+    public String getHexadecimal() {
         int rem = 0;
         String hexaNum = "";
 
@@ -39,13 +39,13 @@ public class Number {
         return hexaNum;
     }
 
-    public String getOctal(int num) {
+    public String getOctal() {
         int rem = 0;
         int octaNum = 0;
         int i = 1;
 
         while(num > 0){
-            rem = num%8;
+            rem = num % 8;
             octaNum +=  i * rem;
             num = num/8;
             i = i * 10;
@@ -54,7 +54,7 @@ public class Number {
         return Integer.toString(octaNum);
     }
 
-    public String getBinary(int num) {
+    public String getBinary() {
         int binary[] = new int[40];
         int index = 0;
         String binaNum = "";
