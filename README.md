@@ -4,7 +4,7 @@ Using object oriented programming in order to learn about numbers in computer sc
 [Java](https://www.oracle.com/java/technologies/downloads/) and a compatible [IDE](https://www.jetbrains.com/idea/) is required to run the files
 ## Installation
 ```
-git clone git@github.com:yoavami/unit-8.git
+git clone git@github.com:CESJDS/unit-8.git
 ```
 ```
 cd unit-8
