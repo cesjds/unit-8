@@ -59,6 +59,7 @@ public class NumberConversion2
 
         int num = enterNum();
         Number n1 = new Number(num);
+        System.out.println(n1.getDecimal());
         int choice=0;
         String answer = "";
 

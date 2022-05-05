@@ -25,15 +25,16 @@ public class Number implements Comparable<Number> {
     public String getHexadecimal() {
         int rem = 0;
         String hexaNum = "";
+        int currentNum = num;
 
         // the hexadecimal system
         char hex[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 
-        while(num > 0)
+        while(currentNum > 0)
         {
-            rem = num % 16;
+            rem = currentNum % 16;
             hexaNum = hex[rem] + hexaNum;
-            num = num / 16;
+            currentNum = currentNum / 16;
         }
 
         return hexaNum;
@@ -43,11 +44,12 @@ public class Number implements Comparable<Number> {
         int rem = 0;
         int octaNum = 0;
         int i = 1;
+        int currentNum = num;
 
-        while(num > 0){
-            rem = num % 8;
+        while(currentNum > 0){
+            rem = currentNum % 8;
             octaNum +=  i * rem;
-            num = num/8;
+            currentNum = currentNum/8;
             i = i * 10;
         }
 
@@ -58,10 +60,11 @@ public class Number implements Comparable<Number> {
         int binary[] = new int[40];
         int index = 0;
         String binaNum = "";
+        int currentNum = num;
 
-        while(num > 0) {
-            binary[index ++] = num % 2;
-            num = num / 2;
+        while(currentNum > 0) {
+            binary[index ++] = currentNum % 2;
+            currentNum = currentNum / 2;
         }
         for(int i = index - 1; i >= 0; i--) {
             System.out.print(binary[i]);
