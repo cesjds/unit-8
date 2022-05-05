@@ -30,14 +30,18 @@ public class Number implements Comparable<Number> {
         // the hexadecimal system
         char hex[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
 
-        while(currentNum > 0)
-        {
-            rem = currentNum % 16;
-            hexaNum = hex[rem] + hexaNum;
-            currentNum = currentNum / 16;
+        if (num == 0) {
+            return "0";
         }
+        else {
+            while (currentNum > 0) {
+                rem = currentNum % 16;
+                hexaNum = hex[rem] + hexaNum;
+                currentNum = currentNum / 16;
+            }
 
-        return hexaNum;
+            return hexaNum;
+        }
     }
 
     public String getOctal() {
@@ -62,15 +66,19 @@ public class Number implements Comparable<Number> {
         String binaNum = "";
         int currentNum = num;
 
-        while(currentNum > 0) {
-            binary[index ++] = currentNum % 2;
-            currentNum = currentNum / 2;
+        if (num == 0) {
+            return "0";
         }
-        for(int i = index - 1; i >= 0; i--) {
-            binaNum += binary[i];
+        else {
+            while (currentNum > 0) {
+                binary[index++] = currentNum % 2;
+                currentNum = currentNum / 2;
+            }
+            for (int i = index - 1; i >= 0; i--) {
+                binaNum += binary[i];
+            }
+            return binaNum;
         }
-
-        return binaNum;
     }
 
     @Override
