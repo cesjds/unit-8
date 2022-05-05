@@ -1,6 +1,6 @@
 // Yoav Amit
 
-public class Number {
+public class Number implements Comparable<Number> {
     private int num;
 
     // default constructor
@@ -69,5 +69,18 @@ public class Number {
         }
 
         return binaNum;
+    }
+
+    @Override
+    public String toString() {
+        return "decimal: " + getDecimal() + "\n" +
+                "binary: " + getBinary() + "\n" +
+                "octal: " + getOctal() + "\n" +
+                "hexadecimal: " + getHexadecimal();
+    }
+
+    @Override
+    public int compareTo(Number o) {
+        return 0;
     }
 }
