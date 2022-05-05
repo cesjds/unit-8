@@ -67,7 +67,6 @@ public class Number implements Comparable<Number> {
             currentNum = currentNum / 2;
         }
         for(int i = index - 1; i >= 0; i--) {
-            System.out.print(binary[i]);
             binaNum += binary[i];
         }
 
@@ -84,6 +83,6 @@ public class Number implements Comparable<Number> {
 
     @Override
     public int compareTo(Number o) {
-        return 0;
+        return num - o.getDecimal();
     }
 }
